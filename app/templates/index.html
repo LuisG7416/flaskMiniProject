@@ -1,13 +1,18 @@
 <html>
     <head>
         <title>Welcome!</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" value="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
+        <h1 class="center-align">Math Time!</h1>
+        <!--<i class="material-icons" class =  "center-align">sentiment_very_satisfied</i>-->
+        <form method = "post" action = "/doMath">
+            <input type="text" name="firstNum" placeholder="Enter a number" class = "center-align" />
+            <input type="text" name="secondNum" placeholder="Enter a number" class = "center-align"/>
+            <input type="text" name="operation" placeholder="Enter an operation" class = "center-align"/>
+            <input type="submit" class="btn-large" >
         </form>
     </body>
 </html>
