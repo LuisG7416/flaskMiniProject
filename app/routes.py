@@ -13,9 +13,9 @@ def doMath():
         return "Please fill out the form"
     else:
         data = dict(request.form)
-        firstNum = data["firstNum"][0]
-        secondNum = data["secondNum"][0]
-        operation = data["operation"][0]
+        firstNum = data["firstNum"]
+        secondNum = data["secondNum"]
+        operation = data["operation"]
         answer=0
         if firstNum == "7" and secondNum == "5" and operation == "mod":
             return render_template("egg.html")
