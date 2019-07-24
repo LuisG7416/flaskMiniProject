@@ -1,4 +1,4 @@
-* {
+p {
     font-family: 'Titillium Web', sans-serif;
 }
 body {background-color: pink;}
@@ -9,6 +9,7 @@ body {background-color: pink;}
   left: 0;
   height: 100%;
   width: 100%;
+  
 }
 
 .container .row {
